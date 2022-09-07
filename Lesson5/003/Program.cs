@@ -9,43 +9,8 @@ void FillArray(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(1, 100);
-        Console.Write(array[i] + " ");
     }
 }
-
-// int FindMin(int[] array)
-// {
-//     int min = array[0];
-//     for(int i = 0; i < array.Length; i++)
-//     {
-//         if(array[i] < min)
-//         {
-//             min = array[i];
-//         }
-//         else
-//         {
-//             continue;
-//         }
-//     }
-//     return min;
-// }
-
-// int FindMax(int[] array)
-// {
-//     int max = array[0];
-//     for(int i = 0; i < array.Length; i++)
-//     {
-//         if(array[i] > max)
-//         {
-//             max = array[i];
-//         }
-//         else
-//         {
-//             continue;
-//         }
-//     }
-//     return max;
-// }
 
 int FindDiff(int[] array)
 {
@@ -66,8 +31,6 @@ int FindDiff(int[] array)
             continue;
         }
     }
-    Console.WriteLine(max);
-    Console.WriteLine(min);
     return max - min;
 }
 FillArray(nums);

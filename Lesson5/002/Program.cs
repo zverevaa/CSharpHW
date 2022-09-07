@@ -11,11 +11,10 @@ void FillArray(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(-100, 100);
-        Console.Write(array[i] + " ");
     }
 }
 
-int AddUneven(int[] array)
+int AddOdd(int[] array)
 {
     int sum = 0;
     int i = 1;
@@ -28,5 +27,5 @@ int AddUneven(int[] array)
     return sum;
 }
 FillArray(nums);
-Console.WriteLine(AddUneven(nums));
+Console.WriteLine(AddOdd(nums));
 
