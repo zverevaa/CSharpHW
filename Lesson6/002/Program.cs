@@ -15,7 +15,7 @@ int k2 = Convert.ToInt32(Console.ReadLine());
 void GetCrossPoint(int b1, int k1, int b2, int k2)
 {
     // double x = (b1 - b2) / (k2 - k1);
-    double x = ((double)(b1 - b2) / (k2 - k1));
+    double x = ((double)(b2 - b1) / (k1 - k2));
     double y = k1 * x + b1;
 
     Console.WriteLine($"Прямые пересекаются в точке с координатами x:{x}, y:{y}");
