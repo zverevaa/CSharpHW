@@ -28,7 +28,7 @@ int CountPositive(int[] array)
             continue;
         }
     }
-    return (count);
+    return count;
 }
 
 Console.WriteLine($"Количество чисел больше 0: {CountPositive(nums)}");
